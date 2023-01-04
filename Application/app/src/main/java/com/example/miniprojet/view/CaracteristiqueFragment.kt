@@ -9,7 +9,7 @@ import com.example.miniprojet.databinding.CaracteristiqueFragmentBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class ShiftFragment: Fragment()  {
+class CaracteristiqueFragment: Fragment()  {
 
     private lateinit var binding: CaracteristiqueFragmentBinding
 

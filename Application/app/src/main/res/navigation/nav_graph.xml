@@ -2,9 +2,13 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/caracteristiqueFragment">
 
 
-
-
+    <fragment
+        android:id="@+id/caracteristiqueFragment"
+        android:name="com.example.miniprojet.viewModel.CaracteristiqueFragment"
+        android:label="CaracteristiqueFragment"
+        tools:layout="@layout/caracteristique_fragment"/>
 </navigation>

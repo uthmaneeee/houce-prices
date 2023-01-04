@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Mini Projet</string>
+    <string name="app_name">Estimateur de prix</string>
+    <string name="caract_surface_bat_text">Entrer la surface du bâtiment</string>
+    <string name="caract_surface_terrain_text">Entrer la surface du terrain</string>
+    <string name="nb_piece_text">Entrer le nombre de pièces</string>
+    <string name="longitude_text">Entrer la longitude</string>
+    <string name="latitude_text">Entrer la latitude</string>
 </resources>

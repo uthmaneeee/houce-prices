@@ -5,5 +5,56 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+    <EditText
+        android:id="@+id/CaractSurfaceBatText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/caract_surface_bat_text"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:importantForAutofill="no"/>
+    <EditText
+        android:id="@+id/CaractSurfaceTerrainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/caract_surface_terrain_text"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:importantForAutofill="no"/>
+    <EditText
+        android:id="@+id/NbPieceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nb_piece_text"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:importantForAutofill="no"/>
+    <EditText
+        android:id="@+id/LongitudeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/longitude_text"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:importantForAutofill="no"/>
+    <EditText
+        android:id="@+id/LatitudeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/latitude_text"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:importantForAutofill="no"/>
+
 
 </LinearLayout>
