@@ -56,5 +56,12 @@
         android:textAlignment="center"
         android:importantForAutofill="no"/>
 
+    <Button
+        android:id="@+id/CaractButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/caract_button_text"
+        android:textSize="20sp"/>
+
 
 </LinearLayout>

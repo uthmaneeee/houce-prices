@@ -5,4 +5,5 @@
     <string name="nb_piece_text">Entrer le nombre de pièces</string>
     <string name="longitude_text">Entrer la longitude</string>
     <string name="latitude_text">Entrer la latitude</string>
+    <string name="caract_button_text">Valider</string>
 </resources>
