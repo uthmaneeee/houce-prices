@@ -4,12 +4,12 @@ import javax.inject.Inject
 
 class ModeleBackend @Inject constructor () : ModeleInterface {
 
-    override fun priceCalculator(surfaceTerrain: Int, surfaceBatiment: Int, nbPiece: Int, longitude: Int, latitude: Int): Double {
-        return price(surfaceTerrain, surfaceBatiment, nbPiece, longitude, latitude)
+    override fun priceCalculator(surfaceBatiment: Float, surfaceTerrain: Float, nbPiece: Int, longitude: Float, latitude: Float): Float {
+        return price(surfaceBatiment, surfaceTerrain, nbPiece, longitude, latitude)
     }
 
-    private fun price(surfaceTerrain: Int, surfaceBatiment: Int, nbPiece: Int, longitude: Int, latitude: Int): Double {
-        return 888.8
+    private fun price(surfaceBatiment: Float, surfaceTerrain: Float, nbPiece: Int, longitude: Float, latitude: Float): Float {
+        return 888F
     }
 
 
