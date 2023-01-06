@@ -1,65 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/CaractSurfaceBatText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CaractSurfaceBatTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="@string/caract_surface_bat_text"
-        android:layout_marginBottom="16dp"
-        android:textSize="20sp"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        android:importantForAutofill="no"/>
-    <EditText
-        android:id="@+id/CaractSurfaceTerrainText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/CaractSurfaceBatText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CaractSurfaceTerrainTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="@string/caract_surface_terrain_text"
-        android:layout_marginBottom="16dp"
-        android:textSize="20sp"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        android:importantForAutofill="no"/>
-    <EditText
-        android:id="@+id/NbPieceText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/CaractSurfaceTerrainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NbPieceTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="@string/nb_piece_text"
-        android:layout_marginBottom="16dp"
-        android:textSize="20sp"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:importantForAutofill="no"/>
-    <EditText
-        android:id="@+id/LongitudeText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/longitude_text"
-        android:layout_marginBottom="16dp"
-        android:textSize="20sp"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        android:importantForAutofill="no"/>
-    <EditText
-        android:id="@+id/LatitudeText"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NbPieceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:importantForAutofill="no"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ListLocalType"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/latitude_text"
-        android:layout_marginBottom="16dp"
-        android:textSize="20sp"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        android:importantForAutofill="no"/>
+        android:layout_marginTop="10dp"
+        android:hint="Type de bâtiment"
+        android:inputType="none">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/CaractButton"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/Off_White"
+        android:background="@color/cherry_red"
         android:text="@string/caract_button_text"
         android:textSize="20sp"/>
 

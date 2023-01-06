@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Estimateur de prix</string>
-    <string name="caract_surface_bat_text">Entrer la surface du bâtiment</string>
-    <string name="caract_surface_terrain_text">Entrer la surface du terrain</string>
-    <string name="nb_piece_text">Entrer le nombre de pièces</string>
-    <string name="longitude_text">Entrer la longitude</string>
-    <string name="latitude_text">Entrer la latitude</string>
+    <string name="caract_surface_bat_text">Surface du bâtiment</string>
+    <string name="caract_surface_terrain_text">Surface du terrain</string>
+    <string name="nb_piece_text">Nombre de pièces</string>
+    <string name="localType_text">Longitude</string>
     <string name="caract_button_text">Valider</string>
+    <string name="price_text">Prix estimé: %1$f €</string>
+
+    <string-array name="local_type">
+        <item>Maison</item>
+        <item>Appartement</item>
+    </string-array>
 </resources>
+

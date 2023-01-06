@@ -8,7 +8,38 @@
 
     <fragment
         android:id="@+id/caracteristiqueFragment"
-        android:name="com.example.miniprojet.viewModel.CaracteristiqueFragment"
+        android:name="com.example.miniprojet.view.CaracteristiqueFragment"
         android:label="CaracteristiqueFragment"
-        tools:layout="@layout/caracteristique_fragment"/>
+        tools:layout="@layout/caracteristique_fragment">
+        <action
+            android:id="@+id/action_caracteristiqueFragment_to_priceFragment"
+            app:destination="@id/priceFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/priceFragment"
+        android:name="com.example.miniprojet.view.PriceFragment"
+        android:label="PriceFragment"
+        tools:layout="@layout/price_fragment">
+        <argument
+            android:name="surfaceBat"
+            app:argType="float" />
+        <argument
+            android:name="surfaceTer"
+            app:argType="float" />
+        <argument
+            android:name="nbPiece"
+            app:argType="integer" />
+        <argument
+            android:name="localType"
+            app:argType="integer" />
+        <argument
+            android:name="price"
+            app:argType="float" />
+        <action
+            android:id="@+id/action_priceFragment_to_caracteristiqueFragment"
+            app:destination="@id/caracteristiqueFragment" />
+    </fragment>
+
 </navigation>
