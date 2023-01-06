@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.navigation.fragment.findNavController
 import com.example.miniprojet.R
 import com.example.miniprojet.databinding.CaracteristiqueFragmentBinding
@@ -53,9 +52,6 @@ class CaracteristiqueFragment: Fragment(){
 
         val caractViewModel: CaractViewModel by viewModels()
 
-
-
-
         binding.CaractButton.setOnClickListener {
             try {
                 val surfaceBat = binding.CaractSurfaceBatText.text.toString().toFloat()
@@ -63,10 +59,16 @@ class CaracteristiqueFragment: Fragment(){
                 val nbPiece = binding.NbPieceText.text.toString().toInt()
                 val localTypeString = binding.autoCompleteTextView.text.toString()
 
-                if (localTypeString == "Maison"){
-                    localType = 1
-                } else if (localTypeString == "Appartement") {
-                    localType = 2
+                localType = when (localTypeString) {
+                    "Maison" -> {
+                        1
+                    }
+                    "Appartement" -> {
+                        2
+                    }
+                    else -> {
+                        throw NumberFormatException("no localType")
+                    }
                 }
 
                 caractViewModel.calcul(surfaceBat, surfaceTer, nbPiece, localType)
