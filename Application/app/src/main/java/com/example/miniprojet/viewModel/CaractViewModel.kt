@@ -17,15 +17,9 @@ class CaractViewModel @Inject constructor(state : SavedStateHandle, private val 
     private val _priceResult: MutableLiveData<Float> = state.getLiveData(STATE_KEY_RESULT, 0F)
     val priceResult: LiveData<Float> = _priceResult
 
-    fun calcul(surfaceBat: Float, surfaceTer: Float, nbPiece: Int, Longitude: Float, Latitude: Float){
+    fun calcul(surfaceBat: Float, surfaceTer: Float, nbPiece: Int, localType: Int){
         try {
-            Log.d("test", surfaceBat.toString())
-            Log.d("test", surfaceTer.toString())
-            Log.d("test", nbPiece.toString())
-            Log.d("test", Longitude.toString())
-            Log.d("test", Latitude.toString())
-
-            _priceResult.value = modeleInterface.priceCalculator(surfaceBat, surfaceTer, nbPiece, Longitude, Latitude)
+            _priceResult.value = modeleInterface.priceCalculator(surfaceBat, surfaceTer, nbPiece, localType)
             Log.d("test", _priceResult.value.toString())
         } catch (e: java.lang.IllegalArgumentException) {
             _priceResult.value = 0F
